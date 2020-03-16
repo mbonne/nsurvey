@@ -9,6 +9,7 @@ If using a list of subnets. It can be implied you're testing inter subnet/vlan r
 nmap is using the following command against each IP address specified: 
 
 $ nmap -T4 -F --traceroute "$targetIP"
+
 (Basic and quick port scan, traceroute, will guess the Manufacturer from MAC OUI)
 
 example contents of your .txt file:
@@ -48,7 +49,9 @@ example contents of your .txt file:
 Run script on its own to scan your current connected network.
 
 $ sudo ./nsurvey
+
 or
+
 $ sudo ./nsurvey /path/to/file/listOfSubnets.txt
 
-In no file specified, script will attempt to fudge the 'subnet to scan' using the gateway and bit prefix of subnet target network in CIDR notation for nmap. This is a bit of hack, open to suggestions for more accurate parsing of connected subnet.
+- In no file specified, script will attempt to fudge the 'subnet to scan' using the gateway and bit prefix of current subnet to target network for nmap. This is a bit of hack, open to suggestions for more accurate parsing of connected subnet.
