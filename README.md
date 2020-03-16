@@ -54,4 +54,4 @@ or
 
 $ sudo ./nsurvey /path/to/file/listOfSubnets.txt
 
-- In no file specified, script will attempt to fudge the 'subnet to scan' using the gateway and bit prefix of current subnet to target network for nmap. This is a bit of hack, open to suggestions for more accurate parsing of connected subnet.
+- If no file specified, script will attempt to fudge the 'subnet to scan' using the gateway and bit prefix of current subnet to target network for nmap. This is a bit of hack, open to suggestions for more accurate parsing of connected subnet.
