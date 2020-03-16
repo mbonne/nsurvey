@@ -1,7 +1,7 @@
 # nsurvey
 
 # Purpose:
-Automate simple network survey.
+Automate simple network survey from macOS.
 
 # What does this script do:
 Runs a network survey against your connected network, or against a list of subnets(CIDR notation) in txt file.
