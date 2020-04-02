@@ -8,7 +8,7 @@ Runs a network survey against your connected network, or against a list of subne
 If using a list of subnets. It can be implied you're testing inter subnet/vlan routing or ACLs.
 nmap is using the following command against each IP address specified:
 
-$ nmap -T4 -F --traceroute "$targetIP"
+`$ nmap -T4 -F --traceroute "$targetIP"`
 
 (Basic and quick port scan, traceroute, will guess the Manufacturer from MAC OUI)
 
@@ -48,11 +48,11 @@ example contents of your .txt file:
 # How to use script:
 Run script on its own to scan your current connected network.
 
-$ sudo ./nsurvey
+`$ sudo ./nsurvey`
 
 or
 
-$ sudo ./nsurvey /path/to/file/listOfSubnets.txt
+`$ sudo ./nsurvey /path/to/file/listOfSubnets.txt`
 
 - If no file specified, script will attempt to fudge the 'subnet to scan' using the gateway and bit prefix of current subnet to target network for nmap. This is a bit of hack, open to suggestions for more accurate parsing of connected subnet.
 
