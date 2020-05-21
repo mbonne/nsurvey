@@ -177,7 +177,7 @@ ipconfig getpacket "$activeNic"
 echo -e "${GREEN}===============================================================================${NOCOLOR}"
 
 ##check if nmap exists - not sure if best way to check exists.
-if [[ -e $(which nmap) ]]; then
+if [[ -e $(command -v nmap) ]]; then
   if test -z "$1"; then
     ##Variable is empty, will set your current WAN IP
     #echo -e "${GREEN}===============================================================================${NOCOLOR}"
